@@ -1,0 +1,78 @@
+var a = 10
+function xyz() {
+  var a = 20
+  console.log(a)
+}
+xyz();
+
+What will be the order of consoles after calling xyz() function? 
+Ans) 20 will be printed once cuz log is being called when var is initialized to 20
+
+What is the return type of array.find?
+Ans) Its the first value that satisfies the condition. If not a single element satisfies the requirement, then its undefined.
+
+What are promises, and what are their states?
+Ans) Promises are made for when its not certain what value will be returned, for example a call from the internet or from a database. There are three states, pending: initial state, neither fulfilled nor rejected. Fulfilled: meaning that the operation was completed successfully. Rejected: meaning that the operation failed.
+
+
+What is the difference between == and === in JavaScript?
+Ans) == performs type conversion. === does not perform type conversion
+
+What is the difference between synchronous and asynchronous programming in JavaScript?
+Synchronous programming means every instruction will be executed one after another, therefore intructions will have to wait for previous instructions to run to work. 
+In asynchronous programming, this blocking mechanism can be bypassed and allows instructions to continue executing and not be hindered by waiting instructions.
+Await, promises, etc
+
+promises   // thread backend execute  
+ // main thread child thread await 
+
+
+Write a function in JS that takes an array of numbers and returns the sum of all the even numbers in the array.
+Ans)
+const summer = (arr) => {
+    let sum = 0
+
+    for (let i = 0; i < arr?.length; i++) {
+        if (arr[i] % 2 == 0) {
+            sum += arr[i]
+        }
+    }
+
+    return sum;
+}
+
+Write a function in Node.js that returns the second-largest number in an array.
+Ans)
+const second = (arr) => {
+    let sum = 0
+
+    let abc = arr.sort((a,b)=> b-a)
+
+    return abc[1];
+}
+
+Difference between array.slice vs array.splice?
+Ans) Slice does not change the original array and creates a copy of the elements in a new array while removing some values.
+     Splice does change the original array and implements the removal of elements directly in the original array.
+
+Remove duplicate items in array.
+
+const arr = [1, 1, 2, 3, 4, 5, 6, 6, 2, 4, 5, 7];
+dublicate = () => {
+Ans) return arr.filter((value, index) => arr.indexOf(value) === index)
+}
+dublicate();
+
+ data = [
+//   { id: 1, name: "mughira", task: "did react", date: "12,6,2022" },
+//   { id: 2, name: "ramaz", task: "did nextjs", date: "15,6,2022" },
+//   { id: 3, name: "hamza", task: "did larawell", date: "13,6,2022" },
+//   { id: 4, name: "umer", task: "did node", date: "14,6,2022" },
+//   { id: 5, name: "ahsan", task: "did html", date: "13,6,2022" },
+//   { id: 6, name: "ahmed", task: "did css", date: "13,6,2022" },
+// ];
+seperate all the data by dates the length of the data can be anything
+
+Ans) data.map((item) =>{
+        
+    })
